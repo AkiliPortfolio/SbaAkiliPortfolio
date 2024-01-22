@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Akili Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" type="image/jpg" href="./img/thumbnail-1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+    <!-- Header -->
+        <nav class="header">
+            <span class="logo">Akili portfolio</span>
+            <ul>
+                <a href="#MusicVideo"><li>MV</li></a>
+                <a href="#About-us"><li>About</li></a>
+                <a href="#contact-us"><li>Contact</li></a>
+            </ul>
+        </nav>
+    <!-- Banner 
+        <div class="banner">
+            <h1>Akili</h1>
+            <h2>Portfolio</h2>
+        </div> -->
+
+        <!-- Photo Slideshow -->
+<div id="home" class="slideshow-container">
+    <div class="mySlide fade">
+    <img src="./img/DSC6628.JPG">
+    </div>
+    <div class="mySlide fade">
+    <img src="./img/mmpa1.jpg">
+    </div>
+    <div class="mySlide fade">
+    <img src="./img/mmpa2.jpg">
+    </div>
+    <!-- Previous & Next Buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <!-- MV -->
+       <div id="MusicVideo" class="MV">
+       <h1>music video</video></h1>
+       </div>
+       <div class="video-container">
+        <div class="video-info">
+            <h2>My performance art</h2>
+            <p>這是我高中三年在表演藝術的作品</p>
+        </div>
+        <iframe width="760" height="415" src="https://www.youtube.com/embed/zaNh3dClwxI?si=D5l1KqzmmgkFxdb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video-thumbnails">
+            <img src="./img/thumbnail-1.png" data-video-id="D2xmlzMOsmM" alt="MV 1 Title" data-description="MV 1 description">
+            <!--<img src="./img/DSC6628.JPG" data-video-id="x5ZeAfz4G3s" alt="MV 2 Title" data-description="MV 2 description">
+            <img src="./img/thumbnail-3.jpg" data-video-id="J8fQMq4T8Yg" alt="MV 3 Title" data-description="MV 3 description">-->
+          
+        </div>
+        </div>
+
+    <!-- About --> 
+    <div id="About-us" class="about">
+        <h1>About</h1>
+    </div>
+
+    <div class="aboutCards">
+        <div class="cards-container">
+            <div class="col">
+                <img class=“mempic” src="./img/DSC6628.JPG" alt="AkiliPortfolio">
+                <h3>壹</h3>
+                <!--<p>Main vocalist of Akili</p>-->
+            </div>
+            <div class="col">
+                <img class=“mempic” src="./img/mmpa1.jpg" alt="AkiliPortfolio">
+                <h3>規範</h3>
+                <!--<p>Main vocalist of Akili</p>-->
+            </div>
+            <div class="col">
+                <img class=“mempic” src="./img/mmpa2.jpg" alt="AkiliPortfolio">
+                <h3>規範</h3>
+                <!--<p>Main vocalist of Akili</p>-->
+            </div>
+         </div>
+     </div>
+
+            <!-- Contact -->
+            <div id="contact-us" class="contact">
+                <h1>Contact</h1>
+            </div>
+            <!-- Contact Container -->
+            <div class="contact-container">
+                <!-- Image -->
+                <div class="image-container">
+                    <img src="./img/contact.jpeg" alt="Akili picture">
+                </div>
+                <!-- Form -->
+                <div class="form-container">
+                    <form>
+                        <h2>Chat with me</h2>
+                        <!-- Name -->
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+                        <!-- Email -->
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                        <br>
+                        <!-- Gender -->
+                        <lable>Gender</lable>
+                        <div class="gender-container">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">M</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">F</label>
+                            <input type="radio" id="not-tell" name="gender" value="not-tell">
+                            <label for="not-tell">Prefer not to tell</label>
+                        </div>
+                        <br>
+                        <!-- Date of Birth -->
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                        <br>
+                        <!-- Comments -->
+                        <label for="comments">Share anything with me!</label>
+                        <textarea id="comments" name="comments" row="4" cols="50"></textarea>
+                        <br>
+                        <!-- Submit -->
+                        <input type="submit" value="Submit">
+                        <br>
+                    </form>
+                </div>
+                <!-- Map -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.527087857115!2d114.18443377580383!3d22.33371824168247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404072be78391fd%3A0x873032558975a24f!2sHong%20Kong%20Institute%20of%20Contemporary%20Culture%20Lee%20Shau%20Kee%20School%20of%20Creativity!5e0!3m2!1sen!2shk!4v1685345317825!5m2!1sen!2shk" width="600" height="490" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+          
+            <!-- Footer -->
+                 <footer class="footer">
+                    <div class="footer-left">
+                        <p>Created by AkiliPortfolio @2023-2024</p>
+                    </div>
+            </footer>
+                 
+        </body>
+    </html>
+
+        <script type="text/javascript" src="./script.js"></script>
+     </body>
+</html>
